@@ -1,0 +1,18 @@
+input {
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+input:hover {
+  border: 1.5px solid skyblue;
+}
+
+input:active {
+  border: 1.5px solid skyblue;
+}
+
+input:focus {
+  border: 1.5px solid skyblue;
+}
