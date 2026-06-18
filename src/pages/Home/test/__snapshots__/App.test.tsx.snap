@@ -8,11 +8,6 @@ exports[`App Pages Test Should Match Snapshot 1`] = `
     <header
       class="App-header"
     >
-      <img
-        alt="logo"
-        class="App-logo"
-        src="logo.svg"
-      />
       <input
         placeholder="input your tag ..."
         value=""

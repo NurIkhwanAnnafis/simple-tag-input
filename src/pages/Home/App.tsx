@@ -1,4 +1,3 @@
-import logo from '../../assets/logo.svg';
 import './App.css';
 import { useApp } from './hooks/useApp';
 import Input from '../../components/Input/Input';
@@ -16,8 +15,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
         <Input
           value={value}
           onChange={e => handleChange(e.target.value)}
@@ -25,7 +22,10 @@ function App() {
           placeholder='input your tag ...'
         />
 
-        <TagList tags={tags} onRemove={handleRemove} />
+        <TagList
+          tags={tags}
+          onRemove={handleRemove}
+        />
       </header>
     </div>
   );

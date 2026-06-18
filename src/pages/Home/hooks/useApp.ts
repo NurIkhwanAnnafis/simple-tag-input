@@ -8,11 +8,12 @@ export const useApp = () => {
 
   const handleEnterKey = (e: React.KeyboardEvent) => {
     if (e.key !== 'Enter') return null
-    if (!value) return null
+    if (!value) return alert("should input valid tag")
 
     const newValue = value.trim()
     const contained = tags.includes(newValue)
-    if (!newValue || contained) return null
+    if (!newValue) return alert("should input valid tag")
+    if (contained) return alert(`tag ${newValue} already exist`)
 
     setValue('')
     setTags(prev => [...prev, value])
